@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size:30px;
+    text-align:center;
+   
+font-family:'Lora', serif;
+
+  }
+  p{
+    font-size: 15px;
+font-family:'Lora', serif;
+
+  }
+  /* start nav */
+  
+    
+  nav ul li a:link, nav ul li a:visited {
+  
+    text-decoration:none;
+    color:black;
+    font-family: 'Lora', serif;
+  }
+  nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+
+    text-decoration:none;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    
+  }
+  nav ul li a{
+     font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+    text-align:center;
+  }
+  
+ .link{
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  display: block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+  text-align:center;
+  font-family: 'Lora', serif;
+  color: black;
+  text-decoration:none;
+ }
+  
+  
+  
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'nav nav nav nav nav nav'
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  /* index code */
+.indexbody{
+background-color:#48CAE4;
+}
+  .headerindex {
+    grid-area: header;
+    background-image: url(images/background/indexhead2.png);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+font-family:'Lora', serif;
+
+  }
+  .WestCoast,
+  .EastCoast{
+    background-color:#48CAE4;
+    text-align:center;
+  }
+  .Home,
+  .About,
+  .Contact{
+    background-color:#48CAE4;
+    text-align:center;
+  }
+      
+    
+/* east coast code */
+.eastbody{
+  background-color:#48CAE4;
+}
+.headereast {
+  grid-area: header;
+  background-image:url(images/background/eastcoastsunset2.png);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family:'Lora', serif;
+}
+
+  .lefteast,
+  .middleeast,
+  .righteast {
+    padding: 10px;
+ 
+    background-color:#48CAE4;
+  }
+  .lefteast {
+    grid-area: left;
+    text-align:center;
+  }
+  
+
+  .middleeast {
+    grid-area: middle;
+    text-align:center;
+  }
+  
+  
+  .righteast {
+    grid-area: right;
+    text-align: center;
+  }
+/* west coast code */
+.westbody{
+  background-color:#48CAE4;
+}
+.headerwest {
+  grid-area: header;
+background-image:url(images/background/west\ coast\ sunset\ head.png);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family:'Lora', serif;
+
+}
+  .leftewest,
+  .middlwest,
+  .rightwest {
+    padding: 10px;
+    
+    background-color:#48CAE4;
+  }
+
+ 
+  
+ 
+ 
+  .leftwest {
+    grid-area: left;
+    text-align: center;
+  }
+  
+  
+  .middlewest {
+    grid-area: middle;
+    text-align:center;
+  }
+  
+ 
+  .rightwest {
+    grid-area: right;
+    text-align: center;
+  }
+ 
+
+  
+  /*images*/
+  .columni {
+    float: center;
+    width: 33.33%;
+    padding: 20px;
+    text-align:center;
+  }
+  
+  
+  .irow::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .images{
+    text-align:center;
+  }
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  h6{
+    font-family:'Lora', serif;
+
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'nav nav nav nav nav nav'
+        'left left middle middle right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+ 
+/* Create two equal columns that floats next to each other */
+.columnc {
+  float: left;
+
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.rowc:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p{
+  text-align:center;
+}
